@@ -17,18 +17,38 @@ export default class GridAndList extends Component {
     }
 
     render() {
-        let data = ["January - 31 days",
-            "February - 28 days",
-            "March - 31 days",
-            "April - 30 days",
-            "May - 31 days",
-            "June - 30 days",
-            "July - 31 days",
-            "August - 31 days",
-            "September - 30 days",
-            "October - 31 days",
-            "November - 30 days",
-            "December - 31 days"]
+        let data = [
+        {
+            id:1,
+            product_name:"Ferrari",
+            Price:"100M",
+            thumb:"./Images/1.jpg",
+            details:" Ferrari is Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+        },
+        {
+            id:2,
+            product_name:"Lambo",
+            Price:"100M",
+            thumb:"./Images/2.jpg",
+            details:" Lambo is Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+
+        },
+        {
+            id:3,
+            product_name:"Ninja",
+            Price:"100M",
+            thumb:"./Images/3.jpg",
+            details:" Ninja is Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+
+        },
+        {
+            id:4,
+            product_name:"Audi",
+            Price:"100M",
+            thumb:"./Images/4.jpg",
+            details:" Audi is Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+
+        }]
         return (
             <div>
                 <div className="flex-coloumn mt-3">

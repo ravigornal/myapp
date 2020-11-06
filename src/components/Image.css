@@ -1,0 +1,9 @@
+.container{
+    max-height: 30vw;
+}
+.card{
+     border-width: 0vw;
+}
+.container grid-container{
+    display: flex;
+}

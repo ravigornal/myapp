@@ -1,22 +1,24 @@
 import React, { Component } from 'react'
+import { BrowserRouter as Router, Switch, Route, Link, NavLink } from 'react-router-dom';
 
 export class Navbar extends Component {
     render() {
         return (
             <div>
                 <nav class="navbar navbar-expand-lg navbar-light bg-light" style={{"backgroundColor":"#D4C9F5"}}>
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <a class="navbar-brand" href="#"></a>
+                
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        <Link to="/"><a class="nav-link" href="#">Home </a></Link>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About Us</a>
+                    <Link to="/about"><a class="nav-link" href="#">About Us</a></Link>
+                    </li>
+                    <li class="nav-item">
+                    <Link to="/login"><a class="nav-link" href="#">Log In</a></Link>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
